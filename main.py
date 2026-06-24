@@ -10,7 +10,7 @@ def buscar_jugador(matriz):
     return None
 
 
-def intentar_movimiento(matriz, metas, f_actual, c_actual, df, dc):
+def intentar_movimiento(matriz, metas, f_actual, c_actual, df, dc) --> César:
     return None
 
 
@@ -22,7 +22,7 @@ def verificar_victoria(matriz, metas):
     return None
 
 
-def registrar_puntuacion(nombre_jugador, nivel, movimientos):
+def registrar_puntuacion(nombre_jugador, nivel, movimientos) --> César:
     return None
 
 
