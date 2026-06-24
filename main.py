@@ -20,7 +20,55 @@ def buscar_jugador(matriz) --> Joshua:
 
 
 def intentar_movimiento(matriz, metas, f_actual, c_actual, df, dc) --> César:
-    return None
+
+    f_actual, c_actual=buscar_jugador()
+    df, dc = 0, 0
+    if direccion == 'arriba':
+        df = -1
+    elif direccion == 'abajo':
+        df = 1
+    elif direccion == 'izquierda':
+        dc = -1
+    elif direccion == 'derecha':
+        dc = 1
+
+    f_nueva, c_nueva = f_actual + df, c_actual + dc
+
+    Destino = mapa_actual[f_nueva][c_nueva]
+
+    if Destino in [' ', '.']:
+        if metas == (f_actual, c_actual):
+            mapa_actual[f_actual][c_actual] = '.'
+        else:
+            mapa_actual[f_actual][c_actual] = ' '
+
+        mapa_actual[f_nueva][c_nueva] = 'P'
+
+
+    elif celda_destino == '$':
+
+        f_caja_nueva, c_caja_nueva = f_nueva + df, c_nueva + dc
+
+
+        celda_tras_caja = mapa_actual[f_caja_nueva][c_caja_nueva]
+
+
+        if celda_tras_caja in [' ', '.']:
+            
+            if metas == (f_actual, c_actual):
+                mapa_actual[f_actual][c_actual] = '.'
+            else:
+                mapa_actual[f_actual][c_actual] = ' '
+
+
+            mapa_actual[f_nueva][c_nueva] = 'P'
+
+
+            mapa_actual[f_caja_nueva][c_caja_nueva] = '$'
+
+
+            if (f_caja_nueva, c_caja_nueva) == metas:
+                juego_terminado = True
 
 
 def actualizar_metas(matriz, metas) --> Paco:
