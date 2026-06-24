@@ -1,12 +1,12 @@
-def cargar_mapa(nombre_archivo):
+def cargar_mapa(nombre_archivo) --> Gerardo:
     return None
 
 
-def obtener_metas(matriz):
+def obtener_metas(matriz) --> Joshua:
     return None
 
 
-def buscar_jugador(matriz):
+def buscar_jugador(matriz) --> Joshua:
     return None
 
 
@@ -26,9 +26,12 @@ def registrar_puntuacion(nombre_jugador, nivel, movimientos) --> César:
     return None
 
 
-def mostrar_puntuaciones():
+def mostrar_puntuaciones() --> Gerardo:
     return None
 
 
-def dibujar_mapa(matriz):
+def dibujar_mapa(matriz) --> Álvaro:
     return None
+
+MAPAS --> Álvaro
+MENÚ PRINCIPAL --> Gerardo:
