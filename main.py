@@ -1,3 +1,34 @@
-print("¡Proyecto Sokoban Iniciado!")
-print("Me gusta de manera sexual Joshua")
-print("Con que viendo porno!!!)
+def cargar_mapa(nombre_archivo):
+    return None
+
+
+def obtener_metas(matriz):
+    return None
+
+
+def buscar_jugador(matriz):
+    return None
+
+
+def intentar_movimiento(matriz, metas, f_actual, c_actual, df, dc):
+    return None
+
+
+def actualizar_metas(matriz, metas):
+    return None
+
+
+def verificar_victoria(matriz, metas):
+    return None
+
+
+def registrar_puntuacion(nombre_jugador, nivel, movimientos):
+    return None
+
+
+def mostrar_puntuaciones():
+    return None
+
+
+def dibujar_mapa(matriz):
+    return None
