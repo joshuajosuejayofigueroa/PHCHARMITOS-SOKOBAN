@@ -14,11 +14,11 @@ def intentar_movimiento(matriz, metas, f_actual, c_actual, df, dc) --> César:
     return None
 
 
-def actualizar_metas(matriz, metas):
+def actualizar_metas(matriz, metas) --> Paco:
     return None
 
 
-def verificar_victoria(matriz, metas):
+def verificar_victoria(matriz, metas) --> Paco:
     return None
 
 
