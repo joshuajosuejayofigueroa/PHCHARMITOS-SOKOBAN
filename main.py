@@ -1,4 +1,4 @@
-def cargar_mapa(nombre_archivo) --> Gerardo:
+def cargar_mapa(mapa_actual) --> Gerardo:
     return None
 
 
@@ -7,7 +7,11 @@ def obtener_metas(matriz) --> Joshua:
 
 
 def buscar_jugador(matriz) --> Joshua:
-    return None
+    for f in range(len(matriz)):
+        for c in range(len(matriz[f])):
+            if matriz[f][c] == "@" or matriz[f][c] == "+":
+                return f, c
+    return 0, 0
 
 
 def intentar_movimiento(matriz, metas, f_actual, c_actual, df, dc) --> César:
