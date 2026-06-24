@@ -9,7 +9,7 @@ def obtener_metas(matriz) --> Joshua:
 def buscar_jugador(matriz) --> Joshua:
     for f in range(len(matriz)):
         for c in range(len(matriz[f])):
-            if matriz[f][c] == "@" or matriz[f][c] == "+":
+            if matriz[f][c] == "@":
                 return f, c
     return 0, 0
 
