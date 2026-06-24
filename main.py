@@ -3,7 +3,12 @@ def cargar_mapa(mapa_actual) --> Gerardo:
 
 
 def obtener_metas(matriz) --> Joshua:
-    return None
+    metas = []
+    for fila in range(len(matriz)):
+        for columna in range(len(matriz[fila])):
+            if matriz[fila][columna] == "." or matriz[fila][columna] == "*":
+                metas.append([fila, columna])
+    return metas
 
 
 def buscar_jugador(matriz) --> Joshua:
