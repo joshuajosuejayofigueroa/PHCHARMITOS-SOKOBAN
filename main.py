@@ -88,7 +88,39 @@ def mostrar_puntuaciones() --> Gerardo:
 
 
 def dibujar_mapa(matriz) --> Álvaro:
-    return None
+   def reinicio():
+    with open("Sokodries#18.txt","r",encoding="utf-8") as original_map:
+        # ctr + / = #
+        contenido= ""
+        for h in original_map:
+            contenido += h
+
+        escribirmapa(contenido)
+
+
+def escribirmapa(mapa:str,instruccion):
+
+
+    with open("Sokodries18game","w",encoding="utf-8") as map1:
+
+
+        map1.write(mapa)
+        leermapa(mapa)
+
+def leermapa(mapa):
+    with open("Sokodries18game","r",encoding="utf-8") as gameplay:
+
+        print(mapa)
+
+def main():
+
+    while(1):
+        reinicio()
+        a = input("muevete o escribe 'esc': ")
+        a.lower()
+        if a =="esc":
+            reinicio()
+        if a == "a":
 
 MAPAS --> Álvaro
 MENÚ PRINCIPAL --> Gerardo:
